@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.osx.frameworks         = 'SystemConfiguration'
   s.tvos.frameworks        = 'SystemConfiguration', 'UIKit'
   s.library                = 'c++'
-  s.ios.deployment_target  = '11.0'
+  s.ios.deployment_target  = '13.0'
   s.osx.deployment_target  = '10.13'
   s.tvos.deployment_target = '11.0'
 
@@ -47,7 +47,7 @@ Pod::Spec.new do |s|
       elsif ENV["SKIP_FIREBASE_FIRESTORE_SWIFT"] && name.include?('FirebaseFirestoreSwift')
         false
       else
-        false
+        true
       end
     end
 
